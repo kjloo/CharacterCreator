@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "docker:build": "docker build . -t character-creator",
+    "docker:compose": "docker compose up app",
+    "docker:clean": "docker compose down & docker system prune -f",
     "preview": "vite preview"
   },
   "dependencies": {

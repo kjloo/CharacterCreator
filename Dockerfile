@@ -14,6 +14,6 @@ RUN npm run build
 # Set the env to "production"
 ENV NODE_ENV production
 # Expose the port on which the app will be running
-EXPOSE 5173
+EXPOSE 3000
 # Start the app
-CMD [ "npx", "serve", "build" ]
+CMD [ "npx", "serve", "dist" ]

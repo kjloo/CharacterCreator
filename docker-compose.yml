@@ -3,7 +3,7 @@ services:
   app:
     image: character-creator:latest
     ports:
-      - "9000:5173"
+      - "9000:3000"
   mongodb:
     image: mongo:latest
     environment:

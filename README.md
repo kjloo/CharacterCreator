@@ -5,12 +5,12 @@ Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-
 1. Create the docker image
     - 
     ```
-    sudo docker build . -t character-creator
+    npm run docker:build
     ```
 2. Start the app
     - 
     ```
-    docker compose up character-creator
+    npm run docker:compose
     ```
 3. Start the database
     - 
@@ -20,7 +20,7 @@ Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-
 4. Shutdown
     - 
     ```
-    docker compose down & docker system prune -f
+    npm run docker:clean
     ```
 
 ## Tools required for development
