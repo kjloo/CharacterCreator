@@ -1,5 +1,9 @@
 version: '3.8'
 services:
+  app:
+    image: character-creator:latest
+    ports:
+      - "9000:5173"
   mongodb:
     image: mongo:latest
     environment:
