@@ -1,5 +1,5 @@
 # CharacterCreator
-Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-compose, and [mongodb](https://www.mongodb.com/)
+Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-compose, [python flask](https://flask.palletsprojects.com/en/2.2.x/), and [mongodb](https://www.mongodb.com/)
 
 ## Running the app in docker
 1. Create the docker image
@@ -7,7 +7,7 @@ Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-
     ```
     npm run docker:build
     ```
-2. Start the app
+2. Start the apps
     - 
     ```
     npm run docker:compose
@@ -34,6 +34,7 @@ Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-
     - 
     ```
     nvm install 16
+    npm install
     ```
 2. vite
     - 
@@ -44,7 +45,28 @@ Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-
 4. docker-compose
     - 
     ```
-    sudo apt-get install docker-compose-plugin
+    sudo apt install docker-compose-plugin
     ```
-5. mongodb
+5. python3 v3.11
+    - 
+    ```
+    sudo apt update
+    sudo apt install software-properties-common
+    sudo add-apt-repository ppa:deadsnakes/ppa
+    sudo apt update
+    sudo apt install python3.11
+    sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
+    ```
+6. [pip](https://pip.pypa.io/en/stable/installation/)
+    - 
+    ```
+    python3.11 get-pip.py
+    python3.11 -m pip install --upgrade --force-reinstall pip
+    ```
+7. flask
+    - 
+    ```
+    pip3.11 install Flask
+    ```
+8. mongodb
     - managed through docker

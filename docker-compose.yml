@@ -1,9 +1,13 @@
 version: '3.8'
 services:
-  app:
-    image: character-creator:latest
+  client:
+    image: creator-client:latest
     ports:
       - "9000:3000"
+  server:
+    image: creator-server:latest
+    ports:
+      - "5000:5000"
   mongodb:
     image: mongo:latest
     environment:
