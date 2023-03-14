@@ -1,5 +1,5 @@
 # CharacterCreator
-Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-compose, [python flask](https://flask.palletsprojects.com/en/2.2.x/), and [mongodb](https://www.mongodb.com/)
+Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-compose, [python flask](https://flask.palletsprojects.com/en/2.2.x/) with [pipenv](https://pipenv.pypa.io/en/latest/install/), and [mongodb](https://www.mongodb.com/)
 
 ## Running the app in docker
 1. Create the docker image
@@ -63,10 +63,33 @@ Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-
     python3.11 get-pip.py
     python3.11 -m pip install --upgrade --force-reinstall pip
     ```
-7. flask
+7. pipenv
+    - 
+    ```
+    pip install --user pipenv
+    ```
+8. flask
     - 
     ```
     pip3.11 install Flask
     ```
-8. mongodb
+9. mongodb
     - managed through docker
+
+## Run locally
+### Run client
+```
+npm run dev
+```
+
+### Run server
+```
+cp .env.template .env
+```
+```
+pipenv install
+pipenv shell
+```
+```
+flask run
+```
