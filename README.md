@@ -80,6 +80,9 @@ Create a character for custom RPG. Utilizes [Vite](https://vitejs.dev/), docker-
 10. mongodb
     - 
     managed through docker
+    ```
+    pip3.11 install pymongo
+    ```
 
 ## Run locally
 ### Run client
